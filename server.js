@@ -6,7 +6,8 @@ const app = express();
 
 const db = require("./models");
 
-app.use(express.static("public"));
+// app.use(express.static("public"));
+app.use(express.static("dist"));
 
 // if (process.env.JAWSDB_URL) {
 //   console.log("successfully connected");
@@ -16,7 +17,7 @@ app.use(express.static("public"));
 //     host: "localhost",
 //     port: 3306,
 //     user: "root",
-//     password: "alpha1",
+//     password: "root",
 //     database: "pokemon_DB",
 //   });
 // }
